@@ -1,4 +1,12 @@
 GIT
+  remote: git://github.com/anjlab/bootstrap-rails.git
+  revision: a4e33463d3689443702c5868dafea4a1a92e439e
+  specs:
+    anjlab-bootstrap-rails (3.0.0.2)
+      railties (>= 3.0)
+      sass (>= 3.2)
+
+GIT
   remote: git://github.com/ernie/ransack.git
   revision: 8db7a3c1f4242305488a541267dd87c5397f5707
   branch: rails-4
@@ -103,6 +111,13 @@ GEM
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    haml (4.0.3)
+      tilt
+    haml-rails (0.4)
+      actionpack (>= 3.1, < 4.1)
+      activesupport (>= 3.1, < 4.1)
+      haml (>= 3.1, < 4.1)
+      railties (>= 3.1, < 4.1)
     has_scope (0.6.0.rc)
       actionpack (>= 3.2, < 5)
       activesupport (>= 3.2, < 5)
@@ -200,10 +215,12 @@ PLATFORMS
 
 DEPENDENCIES
   activeadmin!
+  anjlab-bootstrap-rails!
   annotate
   coffee-rails (~> 4.0.0)
   devise
   formtastic!
+  haml-rails
   inherited_resources!
   jbuilder (~> 1.2)
   jquery-rails
